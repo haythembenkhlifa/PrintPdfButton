@@ -24,5 +24,7 @@ class PrintPdfButton extends Field
     public function buttonText($text = 'Print'){
         return $this->withMeta(['buttonText'=>$text]);
     }
-
+    public function buttonClass($buttonClass = null){
+        return $this->withMeta(['buttonClass'=>$buttonClass]);
+    }
 }

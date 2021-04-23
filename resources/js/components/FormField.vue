@@ -1,8 +1,8 @@
 <template>
     <default-field :field="field" :errors="errors">
         <template slot="field">
-                <button type="button" v-on:click="print()" class="btn btn-default btn-primary">
-                    <font-awesome-icon  :icon="['fas',this.field.buttonIcon || 'print']"/>
+                <button type="button" v-on:click="print()" :class="this.field.buttonClass || 'btn btn-default btn-primary white-text align-middle'">
+                    <font-awesome-icon class="mr-2"  :icon="['fas',this.field.buttonIcon || 'print']"/>
                         {{ this.field.buttonText || 'Print' }}
                 </button>
         </template>
